@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  AnjukeBy05Team
+//
+//  Created by etcxm on 16/6/6.
+//  Copyright © 2016年 etcxm. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "PublicHeadClass.h"
+
+#import "ZLAlertView.h"
+#import "WYScrollView.h"
+#import "ZRButton.h"
+#import "FMDatabase.h"
+#import "ImageScrollView.h"
+#import "MJRefresh.h"
+#import <SMS_SDK/SMSSDK.h>
+
+#import "UserModel.h"
+#import "UserData.h"
+
+
+#import "LoadingView.h"
+
+#import "MHDatePicker.h"
+
+#endif /* PrefixHeader_pch */

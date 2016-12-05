@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>datas</key>
+		<array>
+			<dict>
+				<key>id</key>
+				<string>10</string>
+				<key>title</key>
+				<string>收货人姓名</string>
+				<key>rightTitle</key>
+				<string>最少2个字</string>
+			</dict>
+			<dict>
+				<key>id</key>
+				<string>11</string>
+				<key>title</key>
+				<string>电话号码</string>
+				<key>rightTitle</key>
+				<string>不少于7位</string>
+			</dict>
+			<dict>
+				<key>id</key>
+				<string>12</string>
+				<key>title</key>
+				<string>省份城市</string>
+				<key>rightTitle</key>
+				<string>请选择</string>
+			</dict>
+			<dict>
+				<key>id</key>
+				<string>13</string>
+				<key>title</key>
+				<string>详细地址</string>
+				<key>rightTitle</key>
+				<string>请输入文本</string>
+			</dict>
+			<dict>
+				<key>id</key>
+				<string>14</string>
+				<key>title</key>
+				<string>邮政编码</string>
+				<key>rightTitle</key>
+				<string>请输入6位数字</string>
+			</dict>
+		</array>
+		<key>id</key>
+		<string>0</string>
+	</dict>
+</array>
+</plist>

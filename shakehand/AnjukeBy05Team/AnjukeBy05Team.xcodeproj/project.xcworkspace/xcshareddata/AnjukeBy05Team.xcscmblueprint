@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "75e70526-65e3-46bb-92b2-8270294d13a7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "75e70526-65e3-46bb-92b2-8270294d13a7" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "75e70526-65e3-46bb-92b2-8270294d13a7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7C243FD4-1931-49FF-89AA-D42F25106C68",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "75e70526-65e3-46bb-92b2-8270294d13a7" : "mycode\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AnjukeBy05Team",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AnjukeBy05Team\/AnjukeBy05Team.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.169.60.226\/mycode",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "75e70526-65e3-46bb-92b2-8270294d13a7"
+    }
+  ]
+}

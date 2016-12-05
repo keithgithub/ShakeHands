@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserQrCodeHelpViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userQr_help.png" translatesAutoresizingMaskIntoConstraints="NO" id="i89-TS-122">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="i89-TS-122" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="2ge-fO-1aG"/>
+                <constraint firstItem="i89-TS-122" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TN1-Tu-7he"/>
+                <constraint firstItem="i89-TS-122" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="ad1-NI-xO3"/>
+                <constraint firstItem="i89-TS-122" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="isR-JF-Ruu"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="userQr_help.png" width="1072" height="1544"/>
+    </resources>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditNickNameViewController">
+            <connections>
+                <outlet property="theEditNickNameTextField" destination="2Or-T1-7NE" id="sI9-ic-ZGu"/>
+                <outlet property="theSaveNickNameBtn" destination="8Lt-50-068" id="j8U-3g-hei"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的昵称" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2Or-T1-7NE">
+                    <rect key="frame" x="8" y="81" width="359" height="30"/>
+                    <color key="textColor" white="0.75686870809999995" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="lSB-pw-01O"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lt-50-068">
+                    <rect key="frame" x="25" y="163" width="324" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DH0-6y-p0N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </state>
+                    <connections>
+                        <action selector="saveEditNickNameAction:" destination="-1" eventType="touchUpInside" id="Bfa-eV-fic"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="限2-15个字符" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLJ-J2-WIc">
+                    <rect key="frame" x="8" y="119" width="74" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="lLJ-J2-WIc" firstAttribute="height" secondItem="2Or-T1-7NE" secondAttribute="height" id="4mq-Iv-EBT"/>
+                <constraint firstItem="lLJ-J2-WIc" firstAttribute="leading" secondItem="2Or-T1-7NE" secondAttribute="leading" id="9Z5-Jl-Xmv"/>
+                <constraint firstItem="lLJ-J2-WIc" firstAttribute="top" secondItem="2Or-T1-7NE" secondAttribute="bottom" constant="8" id="BeT-jr-aLd"/>
+                <constraint firstItem="8Lt-50-068" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="Ul9-p1-BwK"/>
+                <constraint firstItem="8Lt-50-068" firstAttribute="centerX" secondItem="2Or-T1-7NE" secondAttribute="centerX" id="X4J-7N-OtK"/>
+                <constraint firstItem="2Or-T1-7NE" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" constant="-8" id="Xbw-GX-oeN"/>
+                <constraint firstItem="2Or-T1-7NE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="b8M-tF-AsH"/>
+                <constraint firstItem="2Or-T1-7NE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iFl-wa-mYm"/>
+                <constraint firstItem="8Lt-50-068" firstAttribute="top" secondItem="lLJ-J2-WIc" secondAttribute="bottom" constant="14" id="x8I-5u-xXX"/>
+                <constraint firstItem="2Or-T1-7NE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="zX0-Bl-87I"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="241.5" y="259.5"/>
+        </view>
+    </objects>
+</document>

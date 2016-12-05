@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="6181608" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load_tip1.png" translatesAutoresizingMaskIntoConstraints="NO" id="NLF-AH-euW">
+                    <rect key="frame" x="141" y="200" width="93" height="103"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="6181603" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示消息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-hh-Zmz">
+                    <rect key="frame" x="62" y="303" width="250" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66257836246200608" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7Z-Be-MW5">
+                    <rect key="frame" x="94" y="342" width="187" height="39"/>
+                    <color key="backgroundColor" red="0.9779931902885437" green="0.76579910516738892" blue="0.019677199423313141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="随便逛逛">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load_error.png" translatesAutoresizingMaskIntoConstraints="NO" id="LbC-BL-miV">
+                    <rect key="frame" x="148" y="195" width="79" height="103"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VbM-hh-Zmz" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1/17" id="1cz-ck-VwM"/>
+                <constraint firstItem="LbC-BL-miV" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1/6.5" id="2c5-pp-ssG"/>
+                <constraint firstItem="d7Z-Be-MW5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4H3-GA-fab"/>
+                <constraint firstItem="VbM-hh-Zmz" firstAttribute="top" secondItem="NLF-AH-euW" secondAttribute="bottom" id="AYP-SD-dmh"/>
+                <constraint firstItem="LbC-BL-miV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KZM-IB-0mc"/>
+                <constraint firstItem="LbC-BL-miV" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1/4.7" id="Lml-VO-8aA"/>
+                <constraint firstItem="NLF-AH-euW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="200" id="OGF-AA-oVF"/>
+                <constraint firstItem="VbM-hh-Zmz" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="2/3" id="PLP-BY-AIL"/>
+                <constraint firstItem="NLF-AH-euW" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.25" id="POa-ML-ZyN"/>
+                <constraint firstItem="LbC-BL-miV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="195" id="XOn-i3-3Nx"/>
+                <constraint firstItem="d7Z-Be-MW5" firstAttribute="top" secondItem="VbM-hh-Zmz" secondAttribute="bottom" id="cUe-13-o67"/>
+                <constraint firstItem="VbM-hh-Zmz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mdK-s6-yNq"/>
+                <constraint firstItem="NLF-AH-euW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mxC-EW-vup"/>
+                <constraint firstItem="d7Z-Be-MW5" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1/2" id="uOV-OH-mur"/>
+                <constraint firstItem="NLF-AH-euW" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1/6.5" id="vUc-xK-BaK"/>
+                <constraint firstItem="d7Z-Be-MW5" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1/17" id="voV-US-E43"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="errorImage" destination="LbC-BL-miV" id="Yj5-Fc-EIE"/>
+                <outlet property="goBtn" destination="d7Z-Be-MW5" id="fqg-gI-9Ki"/>
+                <outlet property="loadingImage" destination="NLF-AH-euW" id="BYA-o1-LAA"/>
+                <outlet property="remarkMessage" destination="VbM-hh-Zmz" id="F03-FH-R2c"/>
+            </connections>
+            <point key="canvasLocation" x="401.5" y="317.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="load_error.png" width="79" height="95"/>
+        <image name="load_tip1.png" width="81" height="92"/>
+    </resources>
+</document>

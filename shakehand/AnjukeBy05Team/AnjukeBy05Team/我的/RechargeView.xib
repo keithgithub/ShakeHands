@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RechargeViewController">
+            <connections>
+                <outlet property="money" destination="cDf-Jg-LA3" id="DnJ-Nw-CFQ"/>
+                <outlet property="passWord" destination="eLA-Rq-mWI" id="xgk-Ch-VH9"/>
+                <outlet property="phoneNumb" destination="6j7-HV-3or" id="G36-Gx-dyc"/>
+                <outlet property="rechargeBtn" destination="IgX-4m-YEM" id="01G-ug-p2y"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Xbh-YO-jaQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入充值金额" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-Jg-LA3">
+                    <rect key="frame" x="63" y="157" width="250" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入支付宝账号(当前登录账号)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6j7-HV-3or">
+                    <rect key="frame" x="63" y="232" width="250" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgX-4m-YEM">
+                    <rect key="frame" x="94" y="423" width="188" height="40"/>
+                    <color key="backgroundColor" red="0.97799319029999998" green="0.76579910520000005" blue="0.019677199419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="充值">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="rechargeBtnAction:" destination="-1" eventType="touchUpInside" id="nSe-27-PuV"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入支付宝密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLA-Rq-mWI">
+                    <rect key="frame" x="63" y="317" width="250" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="eIq-cv-vmK"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IgX-4m-YEM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1QP-xv-Mn9"/>
+                <constraint firstItem="cDf-Jg-LA3" firstAttribute="height" secondItem="eLA-Rq-mWI" secondAttribute="height" id="7nw-LS-7aA"/>
+                <constraint firstItem="IgX-4m-YEM" firstAttribute="width" secondItem="eLA-Rq-mWI" secondAttribute="width" multiplier="3/4" id="Dx4-Ep-45q"/>
+                <constraint firstItem="eLA-Rq-mWI" firstAttribute="top" secondItem="6j7-HV-3or" secondAttribute="bottom" constant="52" id="IAh-Y1-yMg"/>
+                <constraint firstItem="6j7-HV-3or" firstAttribute="height" secondItem="eLA-Rq-mWI" secondAttribute="height" id="Kk3-Td-5RQ"/>
+                <constraint firstItem="IgX-4m-YEM" firstAttribute="top" secondItem="eLA-Rq-mWI" secondAttribute="bottom" constant="73" id="NHa-bT-koX"/>
+                <constraint firstItem="cDf-Jg-LA3" firstAttribute="width" secondItem="eLA-Rq-mWI" secondAttribute="width" id="Spk-lk-tKy"/>
+                <constraint firstItem="eLA-Rq-mWI" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1/20" id="dId-ne-gdS"/>
+                <constraint firstItem="cDf-Jg-LA3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dbK-9f-DEZ"/>
+                <constraint firstItem="eLA-Rq-mWI" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="2/3" id="fhW-VB-jo9"/>
+                <constraint firstItem="6j7-HV-3or" firstAttribute="width" secondItem="eLA-Rq-mWI" secondAttribute="width" id="jcj-kc-lqO"/>
+                <constraint firstItem="6j7-HV-3or" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jvF-DY-ICe"/>
+                <constraint firstItem="IgX-4m-YEM" firstAttribute="height" secondItem="eLA-Rq-mWI" secondAttribute="height" multiplier="1.2" id="nZb-My-uUY"/>
+                <constraint firstItem="eLA-Rq-mWI" firstAttribute="top" secondItem="cDf-Jg-LA3" secondAttribute="bottom" constant="127" id="oK3-9v-PDk"/>
+                <constraint firstItem="eLA-Rq-mWI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sWk-YU-RpA"/>
+                <constraint firstItem="eLA-Rq-mWI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vKy-p7-jdM"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="374.5" y="311.5"/>
+        </view>
+    </objects>
+</document>
